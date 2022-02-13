@@ -3,6 +3,7 @@ import bootstrap from 'bootstrap';
 
 import About from './components/About';
 import Nav from './components/Nav';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [categories] = useState([
@@ -35,9 +36,10 @@ function App() {
         {/*if user didn't select Contact, then it will render About/Projects/etc.*/}
         {!constactSelected ? (
           <>
-            <Projects currentCategory={currentCategory}></Projects>
+            <Portfolio currentCategory={currentCategory}></Portfolio>
             <About></About>
           </>
+        // {/*else go to Contact Form*/}
         ):(
           <ContactForm></ContactForm>
         )}        
