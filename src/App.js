@@ -29,6 +29,7 @@ function App() {
       <Nav></Nav>
       <main>
         <About></About>
+        <Contact></Contact>
       </main>
     </div>
   );

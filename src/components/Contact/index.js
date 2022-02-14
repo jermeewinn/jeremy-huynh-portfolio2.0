@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState } from 'react';
 import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
@@ -6,6 +6,24 @@ function Contact() {
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
+    function handleChange(e) {
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Your email is invalid');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if(!e.target.value.length) {
+                setErrorMessage(`$${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            }
+        }
+    };
+
+    //
     function handleSubmit(e) {
         e.preventDefault();
         if(!errorMessage) {
@@ -27,9 +45,11 @@ function Contact() {
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onChange={handlechange} rows="5" />
+                    <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
                 </div>
             </form>
         </section>
     )
-}
+};
+
+export default Contact;
