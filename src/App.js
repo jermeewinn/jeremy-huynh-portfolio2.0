@@ -28,10 +28,18 @@ function App() {
 
   const renderPage = () => {
     if (currentCategory.name === "About") {
+      return <About currentCategory={currentCategory} />
+    }
+    if (currentCategory.name === "Portfolio") {
       return <Portfolio currentCategory={currentCategory} />
     }
-    if (currentCategory.name === "Portfolio")
-  }
+    if (currentCategory.name === "Contact") {
+      return <Contact currentCategory={currentCategory} />
+    }
+    if (currentCategory.name === "Resume") {
+      return <Resume currentCategory={currentCategory} />
+    }
+  };
 
   return (
     <div>
@@ -41,8 +49,7 @@ function App() {
         currentCategory={currentCategory}>
       </Nav>
       <main>
-        
-        <Contact></Contact>
+        {renderPage}
       </main>
     </div>
   );
