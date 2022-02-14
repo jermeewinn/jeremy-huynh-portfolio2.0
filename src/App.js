@@ -26,6 +26,13 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
+  const renderPage = () => {
+    if (currentCategory.name === "About") {
+      return <Portfolio currentCategory={currentCategory} />
+    }
+    if (currentCategory.name === "Portfolio")
+  }
+
   return (
     <div>
       <Nav
@@ -34,8 +41,7 @@ function App() {
         currentCategory={currentCategory}>
       </Nav>
       <main>
-        <About></About>
-        <Portfolio></Portfolio>
+        
         <Contact></Contact>
       </main>
     </div>
