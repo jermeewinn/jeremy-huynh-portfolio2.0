@@ -1,49 +1,52 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
     const {
         categories = [],
         setCurrentCategory,
-        currentCategory,
-        contactSelected,
-        setContactSelected
+        currentCategory
     } = props;
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+    // useEffect(() => {
+    //     document.title = currentCategory.name;
+    // }, [currentCategory]);
 
     return (
-        <header>
+        <header className='flex-row px-1'>
             <h1>
                 <a href="/">
                     Jeremy Huynh
                 </a>
             </h1>
             <nav>
-                <ul>
+                <ul className='flex-row'>
+                    {categories.map((category) => (
+                        <li className={`mx-2 ${currentCategory === category.name && 'navActive'}`} key={category.name}></li>
+                    ))}
                     {/*About Me Section*/}
-                    <li>
+                    <li className="flex-row"> 
                         <a href="#about">
                             About Me
                         </a>
                     </li>
-                    {/*Contact Section*/}
-                    <li>
-                        <span onClick={() => setContactSelected(true)}>Contact Me</span>
+                    {/* Portfolio */}
+                    <li className="flex-row">
+                        <a href="#portolio">
+                            Portfolio
+                        </a>
                     </li>
-                    {/*Everything Else set in categories array*/}
-                    {categories.map((category) => (
-                        <li className={ `${currentCategory.name === category.name && !contactSelected && 'navActive'}`} key={category.name}>
-                            <span onClick={() =>{
-                                setCurrentCategory(category);
-                                setContactSelected(false);
-                            }}>
-                                {capitalizeFirstLetter(category.name)}    
-                            </span>
-                        </li>
-                    ))}
+                    {/*Contact Section*/}
+                    <li  className="flex-row">
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                    {/* Resume */}
+                    <li className="flex-row">
+                        <a href="#resume">
+                            Resume
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

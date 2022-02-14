@@ -1,48 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bootstrap from 'bootstrap';
 
 import About from './components/About';
 import Nav from './components/Nav';
-import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+
+
 
 function App() {
+  //categories for the top of the Nav bar
   const [categories] = useState([
-    {
-      name: 'MonsterSafe',
-      description: "Monstersafe is a COVID stat-tracker that allows users to access COVID information for states around the United States, using APIs from Google Maps and CovidActNow.org."
+    { 
+      name: "Portfolio", 
+      description: "Here are a number of projects I've worked on in my time learning Full-Stack Development!"
     },
     {
-      name: 'Extenssion-Pass',
-      description: "Extension-Pass is a comparative travel blog where users are able to share their experiences on places they've travelled in the past. Here, users are able to upvote, comment, and document the destinations they've been to."
+      name: "Contact",
+      description: "Feel free to get in touch with me by submitting this form, or reaching out through social media channels!"
     },
     {
-      name: 'Budget-Tracker',
-      description: "Budget-Tracker is a simple budget tracking app that ustilizes MongoDB to store data online, and IndexedDB offline. This is a mobile-first application, so you can use this application on any device from computers to mobile-phones with spotty connections."
-    }
+      name: "Resume",
+      description: "Here is my resume as of January 31, 2022. Click the button to download a copy!"
+    }  
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [constactSelected, setContactSelected] = useState(false);
-
   return (
-    <div className="App">
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        setContactSelected={setContactSelected}></Nav>         
+    <div>
+      <Nav></Nav>
       <main>
-        {/*if user didn't select Contact, then it will render About/Projects/etc.*/}
-        {!constactSelected ? (
-          <>
-            <Portfolio currentCategory={currentCategory}></Portfolio>
-            <About></About>
-          </>
-        // {/*else go to Contact Form*/}
-        ):(
-          <ContactForm></ContactForm>
-        )}        
+        <About></About>
       </main>
     </div>
   );

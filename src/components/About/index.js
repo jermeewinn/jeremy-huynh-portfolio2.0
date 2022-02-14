@@ -2,7 +2,7 @@ import React from 'react';
 import profilePic from '../../assets/portfolio-pfp.jpg';
 
 function About() {
-    return(
+    return (
         <section>
             <h1 id='about'>About Me</h1>
             <img src={profilePic} style={{ float: "left", alignItems: "center", width: "30%" }} />
