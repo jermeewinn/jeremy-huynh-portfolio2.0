@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectList from '../ProjectList';
 
 //NOTE TO SELF: Gallery=Portfolio, Photolist=Project
 function Portfolio(props) {
@@ -7,7 +8,7 @@ function Portfolio(props) {
         <section>
             <h1>{currentCategory.name}</h1>
             <p>{currentCategory.description}</p>
-            <Project category={currentCategory.name} />
+            <ProjectList category={currentCategory.name} />
         </section>
     )
 };
