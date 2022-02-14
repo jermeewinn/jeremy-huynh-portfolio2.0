@@ -4,12 +4,17 @@ import bootstrap from 'bootstrap';
 import About from './components/About';
 import Nav from './components/Nav';
 import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 
 
 
 function App() {
   //categories for the top of the Nav bar
   const [categories] = useState([
+    {
+      name: "About",
+      description: "A bit about me..."
+    },
     { 
       name: "Portfolio", 
       description: "Here are a number of projects I've worked on in my time learning Full-Stack Development!"
@@ -36,9 +41,9 @@ function App() {
     if (currentCategory.name === "Contact") {
       return <Contact currentCategory={currentCategory} />
     }
-    if (currentCategory.name === "Resume") {
-      return <Resume currentCategory={currentCategory} />
-    }
+    // if (currentCategory.name === "Resume") {
+    //   return <Resume currentCategory={currentCategory} />
+    // }
   };
 
   return (

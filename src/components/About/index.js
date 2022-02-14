@@ -3,7 +3,7 @@ import profilePic from '../../assets/portfolio-pfp.jpg';
 
 function About() {
     return (
-        <section>
+        <section id="sideByside">
             <h1 id='about'>About Me</h1>
             <img src={profilePic} style={{ float: "left", alignItems: "center", width: "30%" }} />
             <div style={{ float: "right", width: "50%", textalign: "left",  }}>
