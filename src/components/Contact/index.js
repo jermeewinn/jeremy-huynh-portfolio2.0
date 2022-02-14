@@ -6,5 +6,16 @@ function Contact() {
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
 
-    function 
+    function handleSubmit(e) {
+        e.preventDefault();
+        if(!errorMessage) {
+            setFormState({...formState, [e.target.name]: e.target.value });
+        };
+    };
+
+    return (
+        <section>
+            <h1>Contact Me</h1>
+        </section>
+    )
 }
