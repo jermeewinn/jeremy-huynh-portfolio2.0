@@ -1,11 +1,11 @@
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
-
+    // This will handle information validation. If we were to console.log(handleChange), it would console.log every keystroke.
     function handleChange(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
@@ -23,7 +23,7 @@ function Contact() {
         }
     };
 
-    //
+    // This will handle submission of information from the contact form
     function handleSubmit(e) {
         e.preventDefault();
         if(!errorMessage) {
