@@ -2,13 +2,13 @@ import React from 'react';
 import ProjectList from '../ProjectList';
 
 //NOTE TO SELF: Gallery=Portfolio, Photolist=Project
-function Portfolio(props) {
-    const { currentCategory } = props;
+function Portfolio({ currentCategory }) {
+    const { name, description } = currentCategory;
     return (
         <section>
-            <h1>{currentCategory.name}</h1>
-            <p>{currentCategory.description}</p>
-            <ProjectList category={currentCategory.name} />
+            <h1>{name}</h1>
+            <p>{description}</p>
+            <ProjectList />
         </section>
     )
 };
