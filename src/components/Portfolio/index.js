@@ -13,4 +13,4 @@ function Portfolio({ currentCategory }) {
     )
 };
 
-export default Portfolio
+export default Portfolio;
