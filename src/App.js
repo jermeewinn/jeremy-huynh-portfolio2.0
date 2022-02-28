@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import bootstrap from 'bootstrap';
-
-import About from './components/About';
 import Nav from './components/Nav';
+import About from './components/About';
+
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 

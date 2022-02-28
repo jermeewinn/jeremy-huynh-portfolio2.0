@@ -1,5 +1,5 @@
 import React from 'react';
-//import { BsGithub } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
 
 const Project = ({ project }) => {
     return(
