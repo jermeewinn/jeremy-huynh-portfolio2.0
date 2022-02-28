@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Project from '../Project';
 
-const ProjectList = ({tech}) => {
+const ProjectList = ({ tech }) => {
     const [projects] = useState([
         {
             name: 'MonsterSafe',
-            src: '',
+            src: 'Monstersafe-SC.png',
             tech: 'Frontend',
             description: 'MonsterSafe is a COVID stat-tracker for all 50 US states.',
             link: 'https://perkthong.github.io/monstersafe/',
@@ -13,7 +13,7 @@ const ProjectList = ({tech}) => {
         },
         {
             name: 'Extension-Pass',
-            src: '',
+            src: 'Extension-Pass.png',
             tech: 'Full-Stack',
             description: 'Travel blog where users can post and share their previous travels.',
             link: 'https://whispering-plains-41505.herokuapp.com/',
@@ -21,7 +21,7 @@ const ProjectList = ({tech}) => {
         },
         {
             name: 'Page-Turner',
-            src:'',
+            src: 'Page-Turner.png',
             tech: 'MERN-stack',
             description: 'Migration of CRUD operations from REST to GraphQL for a Google Book Search API.',
             link: 'https://radiant-fjord-42843.herokuapp.com/',
@@ -29,7 +29,7 @@ const ProjectList = ({tech}) => {
         },
         {
             name: 'Budget-Tracker',
-            src: '',
+            src: 'Budget-Tracker.png',
             tech: 'Backend',
             description: 'Budget tracking app that uses MongoDB and is able to save and function while offline.',
             link: 'https://peaceful-journey-89449.herokuapp.com/',
@@ -37,7 +37,7 @@ const ProjectList = ({tech}) => {
         },
         {
             name: 'Password-Generator',
-            src: '',
+            src: 'PW-Generator.png',
             tech: 'Frontend',
             description: 'Password generator using basic Javascript.',
             link: 'https://jermeewinn.github.io/password-generator/',
