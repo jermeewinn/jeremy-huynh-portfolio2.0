@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 
 
@@ -24,11 +24,9 @@ function App() {
     },
     {
       name: "Resume",
-      description: "Here is my resume as of January 31, 2022. Click the button to download a copy!"
+      description: "Here is my resume. Click the button to download a copy!"
     }  
   ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const renderPage = () => {
     if (currentCategory.name === "About") {
@@ -45,6 +43,8 @@ function App() {
     // }
   };
 
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   return (
     <div>
       <Nav
@@ -55,6 +55,7 @@ function App() {
       <main>
         {renderPage}
       </main>
+      <Footer />
     </div>
   );
 }
