@@ -30,17 +30,18 @@ function App() {
   ]);
 
   const renderPage = () => {
+    console.log(currentCategory.name)
     if (currentCategory.name === "About") {
-      return <About currentCategory={currentCategory} />
+      return <About currentCategory={currentCategory} />;
     }
     if (currentCategory.name === "Portfolio") {
-      return <Portfolio currentCategory={currentCategory} />
+      return <Portfolio currentCategory={currentCategory} />;
     }
     if (currentCategory.name === "Contact") {
-      return <Contact currentCategory={currentCategory} />
+      return <Contact currentCategory={currentCategory} />;
     }
     if (currentCategory.name === "Resume") {
-      return <Resume currentCategory={currentCategory} />
+      return <Resume currentCategory={currentCategory} />;
     }
   };
 
@@ -54,11 +55,12 @@ function App() {
         currentCategory={currentCategory}>
       </Nav>
       <main>
-        {renderPage}
+      {renderPage()}
       </main>
+      
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

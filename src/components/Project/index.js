@@ -2,6 +2,7 @@ import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 
 const Project = ({ project }) => {
+    console.log(project)
     return(
         <div className='mx-2 my-1'>
             <h4>{project.name}

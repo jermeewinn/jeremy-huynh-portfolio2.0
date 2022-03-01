@@ -45,7 +45,7 @@ const ProjectList = ({ tech }) => {
         },
         {
             name: 'Pass-Ex',
-            src: '',
+            src: 'Pass-Ex.png',
             tech: 'MERN-Stack',
             description: 'Reiteration of Extension-Pass, but with a React front-end, MongoDB backend, and a few extra features useful for planning a trip.',
             link: '',

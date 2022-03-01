@@ -7,7 +7,7 @@ const Footer = () => {
     return(
         <footer className='w-100 mt-auto bg-secondary p-4'>
             <div className='container'>
-                <h6>&copy;{new Date().getFullyear()} by Jeremy Huynh
+                <h6>&copy;{new Date().getFullYear()} by Jeremy Huynh
                 <span>
                     <a className='mx-1' href='https://github.com/jermeewinn'><BsGithub /></a>
                     <a className='mx-1' href='mailto:jeahuynh18@gmail.com'><MdEmail /></a>
