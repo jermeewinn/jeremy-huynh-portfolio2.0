@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 
@@ -38,9 +39,9 @@ function App() {
     if (currentCategory.name === "Contact") {
       return <Contact currentCategory={currentCategory} />
     }
-    // if (currentCategory.name === "Resume") {
-    //   return <Resume currentCategory={currentCategory} />
-    // }
+    if (currentCategory.name === "Resume") {
+      return <Resume currentCategory={currentCategory} />
+    }
   };
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

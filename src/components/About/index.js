@@ -5,7 +5,7 @@ function About() {
     return (
         <section id="sideByside">
             <h1 id='about'>About Me</h1>
-            <img src={profilePic} style={{ float: "left", alignItems: "center", width: "30%" }} />
+            <img src={profilePic} style={{ float: "left", alignItems: "center", width: "30%" }} alt='profile picture' />
             <div style={{ float: "right", width: "50%", textalign: "left",  }}>
                 <p>
                     My name is Jeremy Huynh, and I am an alumni of UC Santa Cruz, class of 2018. 
