@@ -41,6 +41,7 @@ h1 {
   font-weight: bolder;
   margin: 5px 0;
   line-height: 1.25;
+  text-align: center;
 }
 
 h2 {
@@ -304,7 +305,6 @@ a {
 #left {
   width: "60%";
   justify-content: center;
-  color: var(--dark);
 }
 
 #tools{
