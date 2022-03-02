@@ -19,7 +19,6 @@ function Nav(props) {
                 </a>
             </h1>
             <nav>
-                {/* Pull from Nav/index.js from photo-port */}
                 <ul className='flex-row'>
                     {categories.map((category) => (
                         <li className={`mx-2 ${currentCategory === category.name && 'navActive'}`} key={category.name}>
