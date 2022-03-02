@@ -36,7 +36,7 @@ function Contact() {
     };
 
     return (
-        <section>
+        <section id='contact'>
             <h1 className='my-5'>Contact Me
                 <a className="mx-2" href="https://github.com/jermeewinn"><BsGithub /></a>
                 <a className="mx-2" href="mailto:jeahuynh18@gmail.com"><MdEmail /></a>
