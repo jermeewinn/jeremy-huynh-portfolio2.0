@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { validateEmail } from "../../utils/helpers";
+import { BsGithub } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md';
+import { ImLinkedin } from 'react-icons/im';
+
 
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
@@ -33,20 +37,25 @@ function Contact() {
 
     return (
         <section>
-            <h1>Contact Me</h1>
+            <h1 className='my-5'>Contact Me
+                <a className="mx-2" href="https://github.com/jermeewinn"><BsGithub /></a>
+                <a className="mx-2" href="mailto:jeahuynh18@gmail.com"><MdEmail /></a>
+                <a className='mx-1' href='https://www.linkedin.com/in/jeremy-huynh/'><ImLinkedin /></a> 
+            </h1>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
+                <div className='my-2 flex-row'>
                     <label htmlFor="name">Name:</label>
                     <input type='text' defaultValue={name} onChange={handleChange} name="name" />
                 </div>
-                <div>
+                <div className='my-2 flex-row'>
                     <label htmlFor="email">Email address:</label>
                     <input type='email' defaultValue={email} onChange={handleChange} name="email" />
                 </div>
-                <div>
+                <div className='my-2 flex-row'>
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" defaultValue={message} onChange={handleChange} rows="5" />
                 </div>
+                <button type='submit'>Submit</button>
             </form>
         </section>
     )

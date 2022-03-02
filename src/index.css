@@ -267,6 +267,49 @@ footer {
   position: fixed;
 }
 
-button {
-  
+a {
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.navActive {
+  color: orange;
+}
+
+#contact-form {
+  padding: 1%;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#sideByside {
+  opacity: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+#me-image {
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-right: 5%;
+  padding-left: 40px;
+}
+
+#left {
+  width: "60%";
+  justify-content: center;
+  color: var(--dark);
+}
+
+#tools{
+  justify-content: space-between;
+  line-height: 1.5;
+  opacity: 75%;
+  font-weight: bolder;
 }
