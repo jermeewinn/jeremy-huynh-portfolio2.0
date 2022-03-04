@@ -44,12 +44,12 @@ const ProjectList = ({ tech }) => {
             git: 'https://github.com/jermeewinn/password-generator'
         },
         {
-            name: 'Pass-Ex',
-            src: 'Pass-Ex.png',
+            name: 'Passport-Extension',
+            src: 'Passport-Extension.png',
             tech: 'MERN-Stack',
             description: 'Reiteration of Extension-Pass, but with a React front-end, MongoDB backend, and a few extra features useful for planning a trip.',
-            link: '',
-            git: 'https://github.com/jermeewinn/Pass-Ex',
+            link: 'https://tranquil-gorge-31416.herokuapp.com/',
+            git: 'https://github.com/jermeewinn/Passport-Extension',
         }
     ]);
 
