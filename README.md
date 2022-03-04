@@ -34,7 +34,8 @@ https://jermeewinn.github.io/jeremy-huynh-portfolio2.0/
 
 ## Contact Me
 
-If you have any questions, feel free to reach out to me at my email: jeahuynh18@gmail.com
+If you have any questions, feel free to reach out to me at my email: [jeahuynh@gmail18.com](#jeahuynh18@gmail.com
+
 My LinkedIn profile can be found here:
 [Jeremy's Linkedin Profile](https://www.linkedin.com/in/jeremy-huynh/)
 
