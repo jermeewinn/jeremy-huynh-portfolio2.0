@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/jeremy-huynh-portfolio2.0/static/css/main.6ee0e5ca.css",
+    "main.js": "/jeremy-huynh-portfolio2.0/static/js/main.2503840d.js",
+    "static/js/787.37d139b0.chunk.js": "/jeremy-huynh-portfolio2.0/static/js/787.37d139b0.chunk.js",
+    "static/media/Profile-Picture.jpg": "/jeremy-huynh-portfolio2.0/static/media/Profile-Picture.70c6bb77e2ead48ab434.jpg",
+    "static/media/Page-Turner.png": "/jeremy-huynh-portfolio2.0/static/media/Page-Turner.d706a5c2426c6dfc32e4.png",
+    "static/media/Cover-Photo.JPG": "/jeremy-huynh-portfolio2.0/static/media/Cover-Photo.509b29366349aa862478.JPG",
+    "static/media/Passport-Extension.png": "/jeremy-huynh-portfolio2.0/static/media/Passport-Extension.79fdafb02e627eb6ad70.png",
+    "static/media/Monstersafe-SC.png": "/jeremy-huynh-portfolio2.0/static/media/Monstersafe-SC.7c62ebfa01f4298c1b33.png",
+    "static/media/Budget-Tracker.png": "/jeremy-huynh-portfolio2.0/static/media/Budget-Tracker.57729422d719e755ba18.png",
+    "static/media/Jeremy_Huynh_Technical_Resume_02_25_2022.pdf": "/jeremy-huynh-portfolio2.0/static/media/Jeremy_Huynh_Technical_Resume_02_25_2022.d29fc949e8cbe5cc21c4.pdf",
+    "static/media/Extension-Pass.png": "/jeremy-huynh-portfolio2.0/static/media/Extension-Pass.9c2e7611ce4ef154ee82.png",
+    "static/media/PW-Generator.png": "/jeremy-huynh-portfolio2.0/static/media/PW-Generator.024c908e75dc25d27848.png",
+    "index.html": "/jeremy-huynh-portfolio2.0/index.html",
+    "main.6ee0e5ca.css.map": "/jeremy-huynh-portfolio2.0/static/css/main.6ee0e5ca.css.map",
+    "main.2503840d.js.map": "/jeremy-huynh-portfolio2.0/static/js/main.2503840d.js.map",
+    "787.37d139b0.chunk.js.map": "/jeremy-huynh-portfolio2.0/static/js/787.37d139b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ee0e5ca.css",
+    "static/js/main.2503840d.js"
+  ]
+}
