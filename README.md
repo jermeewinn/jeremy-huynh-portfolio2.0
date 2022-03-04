@@ -6,7 +6,7 @@ I am a graduate of UC Santa Cruz, class of 2018, with a BA degree in Politics, a
 
 # Table of Contents
 
-- [Licenses](#licenses)
+- [License](#license)
 - [Technologies Used](#technologies_used)
 - [Deployed Link](#deployed_link)
 - [Contact Me](#contact_me)
