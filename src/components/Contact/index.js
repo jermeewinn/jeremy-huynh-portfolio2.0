@@ -6,33 +6,55 @@ import { ImLinkedin } from 'react-icons/im';
 
 
 function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
-    const { name, email, message } = formState;
-    const [errorMessage, setErrorMessage] = useState('');
-    // This will handle information validation. If we were to console.log(handleChange), it would console.log every keystroke.
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if(!e.target.value.length) {
-                setErrorMessage(`$${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            }
-        }
-    };
+    // const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+    // const { name, email, message } = formState;
+    // const [errorMessage, setErrorMessage] = useState('');
+    // // This will handle information validation. If we were to console.log(handleChange), it would console.log every keystroke.
+    // function handleChange(e) {
+    //     if (e.target.name === 'email') {
+    //         const isValid = validateEmail(e.target.value);
+    //         if (!isValid) {
+    //             setErrorMessage('Your email is invalid');
+    //         } else {
+    //             setErrorMessage('');
+    //         }
+    //     } else {
+    //         if(!e.target.value.length) {
+    //             setErrorMessage(`$${e.target.name} is required.`);
+    //         } else {
+    //             setErrorMessage('');
+    //         }
+    //     }
+    // };
 
-    // This will handle submission of information from the contact form
-    function handleSubmit(e) {
+    // // This will handle submission of information from the contact form
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     if(!errorMessage) {
+    //         setFormState({...formState, [e.target.name]: e.target.value });
+    //     };
+    // };
+
+    const [status, setStatus] = useState("Submit");
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        if(!errorMessage) {
-            setFormState({...formState, [e.target.name]: e.target.value });
+        setStatus("Sending...");
+        const { name, email, message } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
         };
+        let response = await fetch("http://localhost:5000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
     };
 
     return (
