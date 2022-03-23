@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jeremy-huynh-portfolio2.0/static/css/main.6ee0e5ca.css",
-    "main.js": "/jeremy-huynh-portfolio2.0/static/js/main.2503840d.js",
+    "main.js": "/jeremy-huynh-portfolio2.0/static/js/main.cf71ed30.js",
     "static/js/787.37d139b0.chunk.js": "/jeremy-huynh-portfolio2.0/static/js/787.37d139b0.chunk.js",
     "static/media/Profile-Picture.jpg": "/jeremy-huynh-portfolio2.0/static/media/Profile-Picture.70c6bb77e2ead48ab434.jpg",
     "static/media/Page-Turner.png": "/jeremy-huynh-portfolio2.0/static/media/Page-Turner.d706a5c2426c6dfc32e4.png",
@@ -14,11 +14,11 @@
     "static/media/PW-Generator.png": "/jeremy-huynh-portfolio2.0/static/media/PW-Generator.024c908e75dc25d27848.png",
     "index.html": "/jeremy-huynh-portfolio2.0/index.html",
     "main.6ee0e5ca.css.map": "/jeremy-huynh-portfolio2.0/static/css/main.6ee0e5ca.css.map",
-    "main.2503840d.js.map": "/jeremy-huynh-portfolio2.0/static/js/main.2503840d.js.map",
+    "main.cf71ed30.js.map": "/jeremy-huynh-portfolio2.0/static/js/main.cf71ed30.js.map",
     "787.37d139b0.chunk.js.map": "/jeremy-huynh-portfolio2.0/static/js/787.37d139b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ee0e5ca.css",
-    "static/js/main.2503840d.js"
+    "static/js/main.cf71ed30.js"
   ]
 }
