@@ -2,7 +2,7 @@ import React from 'react';
 import { BsGithub } from 'react-icons/bs';
 
 const Project = ({ project }) => {
-    console.log(project)
+    // console.log(project)
     return(
         <div className='mx-2 my-1'>
             <h4>{project.name}
@@ -11,7 +11,9 @@ const Project = ({ project }) => {
                 alt={project.name}
                 classname='img-thumbnail'
                 key={project.name} /></a>
-            <p>{project.description}</p>
+            <p>{project.description} Deployed application can be found here:<br></br>
+            <a href={project.link}>{project.link} </a></p>
+            <p>Technologies Used: {project.technologies}</p>
         </div>
     );
 };
