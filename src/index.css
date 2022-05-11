@@ -36,7 +36,11 @@ body {
 }
 
 .resume {
-  
+
+}
+
+.skillListTitle {
+  text-align: center;
 }
 
 h1 {
@@ -71,6 +75,7 @@ h4 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  text-align: center;
 }
 
 h5 {

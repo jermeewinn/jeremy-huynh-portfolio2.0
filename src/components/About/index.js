@@ -27,6 +27,29 @@ function About() {
                     If you have any questions or inquiries about my experiences, please feel free to reach out to me via the Contact Section.
                 </p>
             </div>
+            <div className='skillListContainer'>
+                <div>
+                    <h4>
+                        <b id='skillListTitle'>Technical Skills:</b>
+                    </h4>
+                    <ul>
+                        <li>
+                            <b>Programming Languages:</b> HTML, CSS, JavaScript                            
+                        </li>
+                        <li>
+                            <b>Database Management:</b> MySQL, Sequelize, MongoDB, Mongoose
+                        </li>
+                        <li>
+                            <b>Libraries and Frameworks</b> jQuery, React.js, Express.js, Node.js, Bootstrap, Bulma
+                        </li>
+                        <li>
+                            <b>Other Technologies:</b> Handlebars, Git, Heroku, JWT Auth, IndexedDB API, Google Maps API
+                        </li>
+                    </ul>
+                </div>
+            
+
+            </div>
         </section>
     )
 };
