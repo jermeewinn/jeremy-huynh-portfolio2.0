@@ -30,9 +30,13 @@ body {
   flex-direction: column;
 }
 
-#about, #portfolio, #contact, #resume {
+#about, #portfolio, #contact {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.resume {
+  
 }
 
 h1 {
@@ -272,7 +276,7 @@ a {
   border-radius: 5px;
   font-weight: 600;
   padding: 2px 4px;
-  margin-left: -2px;
+  margin-left: 40px;
   margin-right: -2px;
 }
 

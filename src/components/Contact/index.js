@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Resume from '../Resume';
 import { validateEmail } from "../../utils/helpers";
 import { BsGithub } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
@@ -57,7 +58,12 @@ function Contact() {
                 </div>
                 <button type='submit'>Submit</button>
             </form>
+            <div id='resume'>
+                <p>Click here to download a copy of my resume</p>
+                <a href={require('../../assets/images/other/Jeremy_Huynh_Technical_Resume_02_25_2022.pdf')} download><button>Resume</button></a>
+            </div>
         </section>
+        
     )
 };
 
