@@ -39,9 +39,7 @@ body {
 
 }
 
-.skillListTitle {
-  text-align: center;
-}
+
 
 h1 {
   font-family: 'Arial', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -287,6 +285,20 @@ a {
 
 .navActive {
   color: orange;
+}
+
+#skillListContainer {
+  border: 1px solid #c3c2c2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.skillListTitle {
+  text-align: center;
+}
+
+#aboutContainer {
+  margin-bottom: 10px;
 }
 
 #contact-form {
