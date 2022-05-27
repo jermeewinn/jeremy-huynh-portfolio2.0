@@ -269,10 +269,14 @@ footer {
   margin-top: auto;
   bottom: 0;
   height: 60px;
-  background-color: #25383c;
+  background-color: #33322f;
   width: 100%;
   text-align: center;
   position: fixed;
+}
+
+.footer {
+  margin-top: 40px;
 }
 
 a {
@@ -289,6 +293,8 @@ a {
 
 #skillListContainer {
   border: 1px solid #c3c2c2;
+  margin: auto;
+  width: 800px;
   margin-top: 10px;
   margin-bottom: 10px;
 }

@@ -6,7 +6,7 @@ import { ImLinkedin } from 'react-icons/im';
 const Footer = () => {
     return(
         <footer className='w-100 mt-auto bg-secondary p-4'>
-            <div className='container'>
+            <div id='footer' className='container'>
                 <h6>&copy;{new Date().getFullYear()} by Jeremy Huynh
                 <span>
                     <a className='mx-1' href='https://github.com/jermeewinn'><BsGithub /></a>
