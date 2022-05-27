@@ -39,9 +39,9 @@ function Contact() {
     return (
         <section id='contact'>
             <h1 className='my-5'>Contact Me
-                <a className="mx-2" href="https://github.com/jermeewinn"><BsGithub /></a>
+                {/* <a className="mx-2" href="https://github.com/jermeewinn"><BsGithub /></a>
                 <a className="mx-2" href="mailto:jeahuynh18@gmail.com"><MdEmail /></a>
-                <a className='mx-1' href='https://www.linkedin.com/in/jeremy-huynh/'><ImLinkedin /></a> 
+                <a className='mx-1' href='https://www.linkedin.com/in/jeremy-huynh/'><ImLinkedin /></a>  */}
             </h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className='my-2 flex-row'>
